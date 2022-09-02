@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/danger"
+        android:layout_gravity="center"
+        app:tint="@color/teal_700"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Part is under Progress"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/spartan"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/space_5"
+        android:paddingBottom="@dimen/space_5"
+        android:text="OK"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:textSize="@dimen/space_18"
+        android:id="@+id/btnOK"
+        app:cornerRadius="@dimen/space_10"/>
+
+
+
+
+</LinearLayout>

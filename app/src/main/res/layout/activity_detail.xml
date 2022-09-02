@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/light_black"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--com.synnapps.carouselview.CarouselView
+            android:id="@+id/carousel_home"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="@dimen/space_1" /!-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slider" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Day-1 - Introduction"
+                android:textColor="@color/white"
+                android:fontFamily="@font/spartan"
+                android:padding="@dimen/space_10"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_5"
+                android:textSize="@dimen/space_16"
+                android:fontFamily="@font/spartan"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is sample description of the post.This is sample description of the post.This is sample description of the post."
+                android:fontFamily="@font/spartan"
+                android:textColor="@color/white"
+                android:padding="@dimen/space_10"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textColor="@color/white"
+                android:fontFamily="@font/spartan"
+                android:padding="@dimen/space_10"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginEnd="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="@dimen/space_5">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Comments"
+                    android:textColor="@color/light_grey"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:fontFamily="@font/spartan"
+                    android:textSize="@dimen/space_16"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Comments"
+                android:textColor="@color/white"
+                android:id="@+id/addComment"
+                android:background="#696969"
+                android:padding="@dimen/space_10"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rec_comments"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Related Products"
+                android:textColor="@color/white"
+                android:fontFamily="@font/spartan"
+                android:padding="@dimen/space_10"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_related_products"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

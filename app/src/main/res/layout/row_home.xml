@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/space_6"
+        app:cardElevation="@dimen/space_6"
+        app:cardCornerRadius="@dimen/space_5"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_row_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--com.synnapps.carouselview.CarouselView
+                android:id="@+id/carousel_home"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="@dimen/space_1" /!-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:fontFamily="@font/roboto"
+                android:text="Class 09,10&amp;12th (Live Batches) By Careerwill Team"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:fontFamily="@font/lexend"
+                android:text="Registration Starts From 30-MAR-2021 @7PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_18" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                app:cardCornerRadius="@dimen/space_20"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="@dimen/space_1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/row_iv_comment"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/space_5"
+                        android:src="@drawable/comment"
+                        app:tint="@color/red" />
+
+                    <TextView
+                        android:id="@+id/row_tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/space_10"
+                        android:layout_toRightOf="@id/row_iv_comment"
+                        android:fontFamily="@font/spartan"
+                        android:text="1491 Comments"
+                        android:textColor="@color/teal_700"
+                        android:textSize="@dimen/space_14" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:layout_toLeftOf="@+id/row_tv_comment_count"
+                        android:src="@drawable/ic_baseline_remove_red_eye_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/row_tv_comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:layout_toLeftOf="@+id/row_iv_share"
+                        android:fontFamily="@font/spartan"
+                        android:text="2.2M"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14" />
+
+                    <ImageView
+                        android:id="@+id/row_iv_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:foregroundGravity="right"
+                        android:src="@drawable/share_24"
+                        app:tint="@color/teal_700" />
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
